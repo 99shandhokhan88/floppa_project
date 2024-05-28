@@ -2,6 +2,7 @@
 import React from "react";
 import { Grommet, Box, Button, Heading } from "grommet";
 import { Header } from "./components/Header";
+import AllItems from "./components/AllItems";
 
 const theme = {
   global: {
@@ -24,11 +25,19 @@ function App() {
       <Box width="auto">
         <Box align="center" pad="large">
           <Heading level="2" alignSelf="center">
-            Welcome to our shop
+            Welcome to Big Floppa Cap inventory
           </Heading>
-          <Box pad="medium">
-            <Button label="Shop Now" onClick={() => alert("Hello, Grommet!")} />
+          <Box pad="medium" gap="medium">
+            <Button
+              label="All Stock"
+              onClick={() => alert("Hello, Grommet!")}
+            />
+            <Button
+              label="Info Articolo"
+              onClick={() => alert("Hello, Grommet!")}
+            />
           </Box>
+          <AllItems />
         </Box>
       </Box>
     </Grommet>
