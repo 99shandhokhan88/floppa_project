@@ -1,8 +1,9 @@
 // App.js
-import React from "react";
-import { Grommet, Box, Button, Heading } from "grommet";
+import { Grommet } from "grommet";
 import { Header } from "./components/Header";
-import AllItems from "./components/AllItems";
+import Details from "./components/Details";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import Home from "./components/Home";
 
 const theme = {
   global: {
@@ -20,27 +21,15 @@ const theme = {
 
 function App() {
   return (
-    <Grommet theme={theme}>
-      <Header />
-      <Box width="auto">
-        <Box align="center" pad="large">
-          <Heading level="2" alignSelf="center">
-            Welcome to Big Floppa Cap inventory
-          </Heading>
-          <Box pad="medium" gap="medium">
-            <Button
-              label="All Stock"
-              onClick={() => alert("Hello, Grommet!")}
-            />
-            <Button
-              label="Info Articolo"
-              onClick={() => alert("Hello, Grommet!")}
-            />
-          </Box>
-          <AllItems />
-        </Box>
-      </Box>
-    </Grommet>
+    <Router>
+      <Grommet theme={theme}>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/details/:hash" element={<Details />} />
+        </Routes>
+      </Grommet>
+    </Router>
   );
 }
 
