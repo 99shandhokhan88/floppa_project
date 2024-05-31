@@ -1,0 +1,19 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\main",
+    "\\main\\java",
+    "\\main\\java\\com",
+    "\\main\\java\\com\\example",
+    "\\main\\java\\com\\example\\floppa",
+    "\\main\\java\\com\\example\\floppa\\eShop",
+    "\\main\\resources",
+    "\\test\\java",
+    "\\test\\java\\com",
+    "\\test\\java\\com\\example",
+    "\\test\\java\\com\\example\\floppa",
+    "\\test\\java\\com\\example\\floppa\\eShop"
+  ],
+  "SelectedNode": "\\main\\java\\com\\example\\floppa\\eShop\\EShopApplication.java",
+  "PreviewInSolutionExplorer": false
+}
